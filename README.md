@@ -25,3 +25,8 @@ Designs for order type.
 The admin role is able to manage designers and approve designer requests to 
 users. They can also remove designers from their roles and they have the ability
 to look at the orders to see if the designers are doing their work.
+
+GROUP MEMBERS:
+NAPURAN, Ma. Magdalena B.
+PAGUIPO, Kent Martin M.
+MACABARE, Shane Francis N.
