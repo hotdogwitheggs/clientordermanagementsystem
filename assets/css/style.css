@@ -1,0 +1,189 @@
+/* Root theme and body */
+:root {
+    --primary: #4a6ed1;
+    --secondary: #6c757d;
+    --success: #2ecc71;
+    --danger: #e74c3c;
+    --warning: #f39c12;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --accent: #5865f2;
+    --bg: #f4f6f9;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+}
+
+.card-header, .card-footer {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.btn-sm {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.875rem;
+}
+
+/* Badges */
+.badge {
+    padding: 0.4em 0.65em;
+    font-size: 0.75rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+
+.badge.bg-success { background-color: var(--success) !important; }
+.badge.bg-danger  { background-color: var(--danger) !important; }
+.badge.bg-warning { background-color: var(--warning) !important; color: #212529; }
+.badge.bg-info    { background-color: var(--info) !important; }
+.badge.bg-secondary { background-color: var(--secondary) !important; }
+
+/* Table */
+.table thead th {
+    background-color: var(--dark);
+    color: #fff;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #eef2f8;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 0.3rem;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(74, 110, 209, 0.2);
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+}
+
+/* Modals */
+.modal-content {
+    border-radius: 0.6rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard cards */
+.dashboard-stats .card {
+    transition: transform 0.2s ease;
+}
+.dashboard-stats .card:hover {
+    transform: translateY(-4px);
+}
+
+/* Section spacing */
+.section {
+    padding: 2rem 0;
+}
+
+/* Truncation utilities */
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.4rem;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background-color: #e9ecef;
+    color: #555;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid #ddd;
+}
+
+/* Custom buttons */
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: white;
+}
+.btn-outline-success:hover {
+    background-color: var(--success);
+    color: white;
+}
+.btn-outline-danger:hover {
+    background-color: var(--danger);
+    color: white;
+}
+
+/* Designer service cards */
+.card-service .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-service .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .dashboard-stats .card h2 {
+        font-size: 1.6rem;
+    }
+}
